@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши боксы</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+
+</head>
+
+<body>
+
+    <section class="our_boxes">
+        <div class="header">
+            <a href="index.html">
+                <img src="img/logo 2.png" alt="logo">
+                <div class="logo_text">
+                    <h5>Art present</h5>
+                    <span>мистецтво дарувати</span>
+                </div>
+            </a>
+
+            <a style="display: none;" href="#" data-toggle="modal" data-target="#exampleModal"><img src="img/Vector 9.png" alt=""></a>
+        </div>
+        <div class="main">
+            <div class="nav_box col-7 text-center  ">
+                <div class="col-3"></div>
+                <a href="#" class="active w-100"> Наши боксы</a>
+            </div>
+            <div class="order d-flex justify-content-between  col-8  p-0">
+                <div class="group col-9 p-0 d-flex controls" id="filter_scroll">
+                    <button id="all" class="col-3 active control" data-filter="all"><img src="img/logo 2 (1).png" alt="">Все боксы</button>
+                    <button id="man" class="col-3 control" data-filter=".cat1"><img src="img/man.png" alt="">Чоловіки</button>
+                    <button id="woman" class="col-3 control" data-filter=".cat2"><img src="img/woman.png" alt="">Жінки</button>
+                </div>
+                <div class="sort col-3 p-0 ">
+
+
+                    <!-- <ul id="nav">
+                        <li>
+                            <a href="#" title="Информация о компании">Сортировать по:</a>
+                            <ul class="controls">
+                                <li><a href="#"><button type="button" class="control" data-sort="price:asc">Від найдешевшого</button></a></li>
+                                <li><a href="#"><button type="button" class="control" data-sort="price:desc">Від найдорожчого</button></a></li>
+                                <li><a href="#"><button type="button" class="control" data-sort="published-date:desc">Новинки</button></a></li>
+                                <li><a href="#"><button type="button" class="control" data-sort="count:desc">Частозаказуемые</button></a></li>
+                            </ul>
+                        </li>
+
+                    </ul> -->
+
+                    <!-- <select class="controls">
+                        <option  class="control" data-sort="price:asc">Від найдешевшого</option>
+                        <option class="control" data-sort="price:desc">Від найдорожчого</option>
+                        <option class="control" data-sort="published-date:desc">Новинки</option>
+                        <option class="control" data-sort="count:desc">Частозаказуемые</option>
+                    </select> -->
+
+                    <div class="select" tabindex="1" id="nav_sort">
+                        <span class="select_value">Сортировать по:</span>
+                        <ul class="select_dropdown controls" id="sort_list">
+                            <li class="select_option control" data-sort="price:asc">Від найдешевшого</li>
+                            <li class="select_option control" data-sort="price:desc">Від найдорожчого</li>
+                            <li class="select_option control" data-sort="published-date:desc">Новинки</li>
+                            <li class="select_option control" data-sort="count:desc">Частозаказуемые</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="nav_sort_slider" class="active">
+                <div class="slider  container-filter" id="horizontal">
+                    <div class="slide col-3 p-0 mix cat1" data-price="1" data-count="66" data-published-date="2020-11-22">
+                        <a href="box.html">
+                            <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="2" data-count="55" data-published-date="2020-11-22">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="3" data-count="44" data-published-date="2020-11-22">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="4" data-count="22" data-published-date="2020-11-22">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="5" data-count="1235" data-published-date="2020-11-22">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="6" data-count="123" data-published-date="2020-05-26">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="7" data-count="2345" data-published-date="2020-05-26">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="8" data-count="324" data-published-date="2020-05-26">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="9" data-count="321" data-published-date="2020-05-26">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="124" data-count="346" data-published-date="2020-05-26">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="235" data-count="12" data-published-date="2020-04-09">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="68" data-count="213" data-published-date="2020-04-09">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="426" data-count="345" data-published-date="2020-04-09">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="213" data-count="45" data-published-date="2020-04-09">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="12" data-count="657" data-published-date="2020-01-09">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="464" data-count="89" data-published-date="2020-01-15">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="462" data-count="463" data-published-date="2020-01-15">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="68" data-count="123" data-published-date="2020-01-15">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="879" data-count="46" data-published-date="2020-01-15">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat1" data-price="53" data-count="324" data-published-date="2020-10-15">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                    <div class="slide col-3 p-0 mix cat2" data-price="2321" data-count="523" data-published-date="2020-10-04">
+                        <a href="box.html"> <img src="img/image 12 (1).png" alt="">
+                            <h5>Название бокса </h5>
+                        </a>
+                        <p>ArtPresent пропонує оригінальні коробочки, подарунки в яких - надзвичайно цікаві речі. Вони дарують море позитиву та емоцій не лише для того, хто отримує подарунок, а й для того, хто його дарує.
+                        </p>
+                        <button><a href="box.html"> <img src="img/Vector.svg" alt="">Подробнее </a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <img src="img/Group (8).png" class="fireworks_first" alt="">
+        <img src="img/Group (7).png" class="fireworks_second" alt="">
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<img src="img/Union.png" alt="">
+</button>
+        </div>
+        <div class="modal-dialog col-5">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h2>Главная </h2>
+                    <ul class="m-0 p-0">
+                        <li>
+                            <a href="index.html#about_box"> <img src="img/Group 25.png" alt=""> О наших боксах</a>
+                        </li>
+                        <li>
+                            <a href="index.html#boxes"> <img src="img/Group 25.png" alt=""> Новинки</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about_us"> <img src="img/Group 25.png" alt=""> О нас</a>
+                        </li>
+                        <li>
+                            <a href="index.html#blog"> <img src="img/Group 25.png" alt=""> Блог</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contacts"> <img src="img/Group 25.png" alt=""> Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <button type="button" class="btn btn-outline-primary"><a href="#">
+                            <img src="img/Group.png" style="filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.2));" alt="">
+                            Выбрать готовый бокс
+                        </a>
+                   
+                </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+                    <img src="img/Group (1).png" style="filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.2));" alt="">
+                    Подобрать подарок
+                </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+
+    <script src="js/jquery.mousewheel-3.0.6.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <script src="assets/vendor/mixitup/jquery.mixitup.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+    <script src="js/ourBox.js"></script>
+
+
+</body>
+
+</html>

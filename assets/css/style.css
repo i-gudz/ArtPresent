@@ -1,0 +1,27 @@
+body{overflow-x:hidden}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.img-fluid{max-width:100%;height:auto}
+.controls{margin:15px 0}
+.control{position:relative;display:inline-block;cursor:pointer;font-size:18px;border:none}
+.mixitup-control-active{background:#393939}
+.mixitup-control-active[data-filter]:after{background:transparent}
+.control[data-filter] + .control[data-sort]{margin-left:.75rem}
+.mix,.gap{display:inline-block;vertical-align:top}
+.mix{position:relative}
+.mix:before{content:''}
+/* Сетка */
+/* 2 колонки */
+.mix,.gap{width:calc(100%/2 - (((2 - 1) * 1rem) / 2))}
+/* 3 колонки */
+@media screen and (min-width: 541px) {
+.mix,.gap{width:calc(100%/2 - (((2 - 1) * 1rem) / 2))}
+}
+/* 4 колонки */
+@media screen and (min-width: 961px) {
+.mix,.gap{width:calc(100%/2 - (((2 - 1) * 1rem) / 2))}
+}
+figure.item-hover{position:relative;margin:0;padding:0;overflow:hidden}
+.item-box-overlay-title{position:absolute;bottom:4px;background:#21252985;width:100%;right:0;left:0;padding:7px;text-align:center;display:none}
+figure.item-hover:hover .item-box-overlay-title{display:block}
+.fa-plus{background:#fff;border:none;width:70px!important;color:#343a40;padding:7px;font-size:50px;border-radius:21px 0;top:50%;margin-top:-50px;left:50%;margin-left:-38px;position:absolute;display:none}
+figure.item-hover:hover a svg{display:block}
